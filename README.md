@@ -29,3 +29,5 @@ npm install
 ```bash
 npm run start
 ```
+&rarr; Access the app on your browser: 
+<localhost:3000/tenant/home>
