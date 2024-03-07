@@ -7,6 +7,6 @@ const ProfilePic = ({className=''}) => {
         
         </>
     );
-}
+};
 
 export default ProfilePic;
