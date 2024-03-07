@@ -17,15 +17,15 @@ export default function Receipt(){
                         </p>
                         <p class="flex justify-between">
                             <span class="text-gray-400">Order Type:</span>
-                            <span>Dine-in</span>
+                            <span>2 Bedroom</span>
                         </p>
                         <p class="flex justify-between">
                             <span class="text-gray-400">Property Manager</span>
-                            <span>Jane Doe</span>
+                            <span>Omar</span>
                         </p>
                         <p class="flex justify-between">
                             <span class="text-gray-400">Tenant</span>
-                            <span>John Doe</span>
+                            <span>Hemed</span>
                         </p>
                     </div>
                     <div class="flex flex-col gap-3 pb-6 pt-2 text-xs">
@@ -39,14 +39,9 @@ export default function Receipt(){
                             </thead>
                             <tbody>
                             <tr class="flex">
-                                <td class="flex-1 py-1">Shawarma Big</td>
-                                <td class="min-w-[44px]">4</td>
-                                <td class="min-w-[44px]">$12</td>
-                            </tr>
-                            <tr class="flex py-1">
-                                <td class="flex-1">Viju Milk - 100ml</td>
-                                <td class="min-w-[44px]">1</td>
-                                <td class="min-w-[44px]">$1</td>
+                                <td class="flex-1 py-1">2 Bedroom Unit</td>
+                                <td class="min-w-[44px]">1 month</td>
+                                <td class="min-w-[44px]">15,000</td>
                             </tr>
                             </tbody>
                         </table>
