@@ -3,6 +3,7 @@ import Logo from "./Logo";
 import Dropdown from "./Dropdown";
 import AnnouncementList from "./AnnouncementList";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import ProfilePic from "./ProfilePic";
 
 export default function TopBar({ toggleSidebar, showingNavigation}){
     const announcements = [
@@ -84,17 +85,18 @@ export default function TopBar({ toggleSidebar, showingNavigation}){
                                         focus:ring-4 focus:ring-gray-300" aria-expanded="false" data-dropdown-toggle="dropdown-user"
                                         >
                                             <span className="sr-only">Open User Menu</span>
-                                            <img className="w-8 h-8 rounded-full" 
-                                            src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="user photo"/>
+                                            <ProfilePic
+                                            className='w-8 h-8 rounded-full'
+                                            />
                                         </button>
                                     </Dropdown.Trigger>
                                     <Dropdown.Content>
                                         <div className="px-4 py-3" role="none">
                                             <p className="text-sm text-gray-900" role="none">
-                                                Neil Sims
+                                                Omar Hemed
                                             </p>
                                             <p className="text-sm font-medium text-gray-900 truncate" role="none">
-                                                neil.sims@flowbite.com
+                                                omarhemed800@gmail.com
                                             </p>
                                         </div>
                                         <ul className="py-1" role="none">
