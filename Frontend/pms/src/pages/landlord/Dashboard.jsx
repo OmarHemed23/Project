@@ -44,21 +44,27 @@ export default function Dashboard () {
                     <FontAwesomeIcon icon="building" className="text-blue-700" />
                 </StatsCard>
             </section>
-            <section className="bg-white rounded-lg shadow-md h-96 mt-4">
-                <div className="flex justify-between px-6 py-5 font-semibold border-b border-gray-100">
-                    <div>
-                        Tenants
+            <section className="grid grid-cols-4 gap-4 h-80 mt-4">
+                <div className="col-span-3 bg-white rounded-lg shadow-md ">
+                    <div className="flex justify-between px-6 py-5 font-semibold border-b border-gray-100">
+                        <div>
+                            Tenants
+                        </div>
+                        <div className="flex items-center space-x-4">
+                            <FilterDropdown items={filterItems} onChange={setFilterValue} />
+                            <PrimaryButton >
+                                <FontAwesomeIcon icon="plus" className="mr-2" />
+                                Add Tenant
+                            </PrimaryButton>
+                        </div>
                     </div>
-                    <div className="flex items-center space-x-4">
-                        <FilterDropdown items={filterItems} onChange={setFilterValue} />
-                        <PrimaryButton >
-                            <FontAwesomeIcon icon="plus" className="mr-2" />
-                            Add Tenant
-                        </PrimaryButton>
+                    <div className="overflow-x-auto">
+                        <TenantTable tenants={filteredTenants} />
                     </div>
                 </div>
-                <div className="overflow-x-auto">
-                    <TenantTable tenants={filteredTenants} />
+                <div className="col-span-1 bg-white rounded-lg shadow-md">
+                    {/* Chart to show tenant analytics */}
+                    Chart
                 </div>
             </section>
         </>
