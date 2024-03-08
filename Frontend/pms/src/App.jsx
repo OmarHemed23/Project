@@ -7,7 +7,7 @@ import
   faCircleInfo, faCashRegister, faDashboard, faDownload, faSearch, 
   faArrowLeft, faArrowRight, faUser, faCheckSquare, faTools, faComments, faEnvelope, faChevronDown, faImage, faPaperclip,
   faWallet, faBuilding, faFileContract, faExchange, faChevronRight, faCalendar, faInfoCircle, faTimes, faHome, faBell, 
-  faBars, faEye, faEllipsisV, faUsers, faChartLine, faChartBar, faFileAlt, faCog, faArrowUp, faArrowDown, faFilter
+  faBars, faEye, faEllipsisV, faUsers, faChartLine, faChartBar, faFileAlt, faCog, faArrowUp, faArrowDown, faFilter, faPlus
 } 
 from '@fortawesome/free-solid-svg-icons';
 import  GuestLayout from './layout/GuestLayout';
@@ -31,7 +31,8 @@ export default function App() {
       fab, faDashboard, faCircleInfo, faCashRegister, faDownload, faSearch, 
       faArrowLeft, faArrowRight, faUser, faCheckSquare, faTools, faComments, faEnvelope, faChevronDown, faImage, faPaperclip, 
       faWallet, faBuilding, faFileContract, faExchange, faChevronRight, faChevronDown, faCalendar, faInfoCircle, faTimes, faHome,
-      faBell, faBars, faEye, faEllipsisV, faUsers, faChartLine, faChartBar, faFileAlt, faCog, faArrowUp, faArrowDown, faFilter
+      faBell, faBars, faEye, faEllipsisV, faUsers, faChartLine, faChartBar, faFileAlt, faCog, faArrowUp, faArrowDown, faFilter,
+      faPlus
     );
   return (
     <Routes>
