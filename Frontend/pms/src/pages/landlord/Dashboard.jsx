@@ -4,6 +4,7 @@ import StatsCard from "../../components/StatsCard";
 import TenantTable from "./partials/TenantTable";
 import FilterDropdown from "../../components/Filter";
 import PrimaryButton from "../../components/PrimaryButton";
+import PieChart from "../../components/Charts/PieChart";
 
 export default function Dashboard () {
     const [filterValue, setFilterValue] = useState('');
@@ -28,6 +29,11 @@ export default function Dashboard () {
         { id: "4", name: "Property type"},
         { id: "5", name: "Rent amount"},
     ];
+    const tenantData = [
+        { name: 'Tenant 1', value: 20 },
+        { name: 'Tenant 2', value: 30 },
+        { name: 'Tenant 3', value: 50 },
+      ];
     return (
         <>
             <section className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6 xl:grid-cols-4 2xl:gap-7.5">
@@ -65,6 +71,7 @@ export default function Dashboard () {
                 <div className="col-span-1 bg-white rounded-lg shadow-md">
                     {/* Chart to show tenant analytics */}
                     Chart
+                    <PieChart data={tenantData} />
                 </div>
             </section>
         </>
